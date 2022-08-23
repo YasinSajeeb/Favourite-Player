@@ -22,3 +22,19 @@ function display(selectedPlayers) {
     }
 
 }
+
+function selectPlayer(element) {
+
+
+    const playerName = element.parentNode.parentNode.children[01].innerText;
+
+    const playerObj = {
+        playerName: playerName
+    }
+
+    element.disabled = true;
+    selectedPlayers.push(playerObj);
+
+
+    display(selectedPlayers);
+}
