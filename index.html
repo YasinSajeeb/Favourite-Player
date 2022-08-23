@@ -91,6 +91,55 @@
                     class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
             </div>
         </div>
+
+        <div class="bg-teal-900">
+            <h3 class="text-2xl font-semibold  text-center mt-4 text-white">Budget</h3>
+            <div class="flex flex-col items-center ">
+                <div class="flex mt-4">
+                    <h4 class="text-white text-medium ml-4">Per Player</h4>
+                    <input id="per-player" class="block mb-4 p-1 ml-4 w-7/12" type="email" name=""
+                        placeholder="$Amount">
+                </div>
+                <div>
+                    <button id="btn-calculate"
+                        class="bg-white px-6 mt-1 py-2 font-medium rounded-md block hover:text-teal-900 text-black mx-4">Calculate</button>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between mt-8">
+                    <div class="">
+                        <h4 class="text-white text-medium px-4">Player Expenses</h4>
+                    </div>
+                    <div class="">
+                        <h4 class="text-white text-medium px-4">$<span id="player-expenses">000</span></h4>
+                    </div>
+                </div>
+                <div class="flex flex-col item-center mt-6">
+                    <div>
+                        <div class="flex justify-between mt-4">
+                            <h4 class="text-white text-medium ml-4">Manager</h4>
+                            <input id="manager-cost" class="block mb-4 p-1 ml-4 w-7/12 mx-4" type="email" name=""
+                                placeholder="$Amount">
+                        </div>
+                        <div class="flex justify-between mt-2 ">
+                            <h4 class="text-white text-medium ml-4">Coach</h4>
+                            <input id="coach-cost" class="block mb-4 p-1 ml-4 w-7/12 mx-4" type="email" name=""
+                                placeholder="$Amount">
+                        </div>
+                    </div>
+                    <div>
+                        <button id="btn-total-calculate"
+                            class="bg-white px-4 mt-1 py-2 mx-20 font-medium rounded-md text-center hover:text-teal-900 text-black mx-4">Calculate
+                            Total</button>
+                    </div>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <h4 class="text-white text-medium px-4">Total</h4>
+                    <h4 class="text-white text-medium px-4">$<span id="total-expenses">0000</span></h4>
+
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
