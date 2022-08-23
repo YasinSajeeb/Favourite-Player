@@ -7,10 +7,90 @@
     <title>My Favourite Players</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans">
     <header class="bg-zinc-900">
         <img class="w-1/3 inline-block" src="images/Messi-banner.png" alt="">
         <h1 class="text-lg inline-block text-red-500 pt-60 font-mono text-6xl text-center ">My Favourite Players</h1>
     </header>
+
+    <main class="my-16 grid grid-cols-4 gap-10 mx-24">
+        <div class="flex flex-col items-center border-2 border-teal-900">
+            <img class="h-5/6" src="images/cr-7.jpg" alt="">
+            <h4 class="text-2xl font-semibold p-2">Cristiano Ronaldo</h4>
+            <p class="pb-2">36 Goals | 120 Assist.</p>
+            <div>
+                <button id="btn-cr-7" onclick="selectPlayer(this)"
+                    class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center border-2 border-teal-900">
+            <img class="h-5/6" src="images/Sergio Ramos.jpg" alt="">
+            <h4 class="text-2xl font-semibold p-2">Sergio Ramos</h4>
+            <p class="pb-2">36 Goals | 120 Assist.</p>
+            <div><button id="btn-ramos" onclick="selectPlayer(this)"
+                    class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center border-2 border-teal-900">
+            <img class="h-5/6" src="images/Luka_Modric_Croatia.jpg" alt="">
+            <h4 class="text-2xl font-semibold p-2">Luka Modric</h4>
+            <p class="pb-2">36 Goals | 120 Assist.</p>
+            <div>
+                <button id="btn-luka" onclick="selectPlayer(this)"
+                    class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto bg-teal-900 p-8 px-8">
+            <table class="table w-full">
+                <!-- head -->
+                <thead class="">
+                    <tr>
+                        <th> </th>
+                        <h3 class="text-2xl font-semibold  text-center mt-2 text-white">Selected - V</h1>
+                    </tr>
+                </thead>
+                <tbody id="selected-v" class="text-white py-8">
+                    <tr>
+                        <th></th>
+                        <td></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="flex flex-col items-center border-2 border-teal-900">
+            <img class="h-5/6" src="images/Lewandowski.jpg" alt="">
+            <h4 class="text-2xl font-semibold p-2">Robert Lewandowski</h4>
+            <p class="pb-2">36 Goals | 120 Assist.</p>
+            <div>
+                <button id="btn-robert" onclick="selectPlayer(this)"
+                    class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center border-2 border-teal-900">
+            <img class="h-5/6" src="images/Mohamed Salah.jpg" alt="">
+            <h4 class="text-2xl font-semibold p-2">Mohamed Salah</h4>
+            <p class="pb-2">36 Goals | 120 Assist.</p>
+            <div>
+                <button id="btn-salah" onclick="selectPlayer(this)"
+                    class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center border-2 border-teal-900">
+            <img class="h-5/6" src="images/Zlatan Ibrahimović.jpg" alt="">
+            <h4 class="text-2xl font-semibold p-2">Zlatan Ibrahimović</h4>
+            <p class="pb-2">36 Goals | 120 Assist.</p>
+            <div>
+                <button id="btn-zlatan" onclick="selectPlayer(this)"
+                    class="bg-teal-900 px-4 my-2 py-2 text-white font-medium rounded-md block hover:text-yellow-400">Select</button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
